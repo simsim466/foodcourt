@@ -1,0 +1,17 @@
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/AbstractEntity.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/service/UserService.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/SpringMain.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/service/RestaurantService.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/Role.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/web/MealController.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/repository/UserRepository.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/AbstractNamedEntity.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/web/RestaurantController.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/menu/Meal.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/service/MealService.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/Restaurant.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/User.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/web/UserController.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/model/menu/Dish.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/repository/RestaurantRepository.java
+/home/simonov/IdeaProjects/foodcourt/src/main/java/repository/MealRepository.java
