@@ -1,10 +1,6 @@
 package service;
 
-import model.Restaurant;
-import org.springframework.stereotype.Service;
 import repository.RestaurantRepository;
-
-import java.util.List;
 
 //@Service
 public class RestaurantService {

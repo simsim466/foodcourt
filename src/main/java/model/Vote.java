@@ -1,7 +1,6 @@
 package model;
 
 import jakarta.validation.constraints.NotNull;
-import model.menu.Meal;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 

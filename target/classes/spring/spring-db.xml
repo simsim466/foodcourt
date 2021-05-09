@@ -28,7 +28,7 @@
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
           p:dataSource-ref="dataSource"
-          p:packagesToScan="model.Meal">
+          p:packagesToScan="model">
         <!--p:persistenceUnitName="persistenceUnit">-->
 
         <property name="jpaPropertyMap">
@@ -54,6 +54,6 @@
           p:entityManagerFactory-ref="entityManagerFactory"/>
 
     <!--Сканировать пакет в поисках бинов-->
-    <context:component-scan base-package="repository.datajpa"/>
-    <jpa:repositories base-package="repository.datajpa"/>
+    <context:component-scan base-package="repository.datajpa.mealImpl"/>
+    <jpa:repositories base-package="repository.datajpa.mealImpl"/>
 </beans>

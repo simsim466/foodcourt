@@ -1,6 +1,6 @@
 package service;
 
-import model.menu.Meal;
+import model.Meal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import repository.MealRepository;

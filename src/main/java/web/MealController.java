@@ -1,10 +1,8 @@
 package web;
 
-import model.menu.Meal;
+import model.Meal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import service.MealService;
 
 import java.util.List;

@@ -1,10 +1,9 @@
 package repository.datajpa.mealImpl;
 
-import model.menu.Meal;
+import model.Meal;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import repository.MealRepository;
-import repository.datajpa.restaurantImpl.CrudRestaurantRepository;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -22,9 +21,9 @@ public class MealDataJpa implements MealRepository {
     @Override
     @Transactional//done
     public Meal save(Meal meal, int userId, int resId) {
-        if ( restaurantRepository.getCreatorId(resId) != userId) {
+        /*if ( restaurantRepository.getCreatorId(resId) != userId) {
             return null;
-        }
+        }*/
         if (!meal.isNew() && getWithRestaurant(meal.getId(), resId, userId) == null) {
             return null;
         }

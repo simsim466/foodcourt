@@ -9,6 +9,7 @@ import org.springframework.util.CollectionUtils;
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.EnumSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -23,15 +24,15 @@ public class User extends AbstractNamedEntity {
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"),
             uniqueConstraints = {@UniqueConstraint(columnNames = {"user_id", "role"}, name = "user_roles_unique_idx")})
     @Column(name = "role")
-    @JoinColumn(table = "user_roles", name = "user_id")
+    @JoinColumn(table = "users", name = "user_id")
     @ElementCollection(fetch = FetchType.EAGER)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Set<Role> roles;
 
-    /*@OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "votes", joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "meal_id", referencedColumnName = "id")})
-    private List<Vote> votes;*/
+    private List<Vote> votes;
 
     public User(int id, String name, String password, Collection<Role> roles) {
         super(id, name);

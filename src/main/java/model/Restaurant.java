@@ -20,7 +20,7 @@ public class Restaurant extends AbstractNamedEntity {
         this.creator = user;
     }
 
-    protected Restaurant() {
+    public Restaurant() {
     }
 
     public User getCreator() {

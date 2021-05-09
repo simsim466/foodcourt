@@ -1,6 +1,6 @@
 package repository;
 
-import model.menu.Meal;
+import model.Meal;
 
 import java.util.List;
 
