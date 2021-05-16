@@ -29,9 +29,11 @@ public class VoteController {
 
     @PutMapping(value = "/vote-for/{mealId}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Vote> create(@PathVariable int mealId) {
-        Vote vote = new Vote();
-        Vote created = voteService.save(vote, mealId, USER_ID);
+        Vote vote = Vote.getInstance();
+        Vote created = voteService.saveByMeal(vote, mealId, USER_ID);
         return ResponseEntity.ok(created);
     }
+
+
 
 }

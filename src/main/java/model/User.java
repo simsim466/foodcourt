@@ -1,5 +1,7 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.hibernate.annotations.OnDelete;
@@ -32,12 +34,21 @@ public class User extends AbstractNamedEntity {
     @OneToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "votes", joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "meal_id", referencedColumnName = "id")})
+    @JsonIgnore
     private List<Vote> votes;
 
     public User(int id, String name, String password, Collection<Role> roles) {
         super(id, name);
         this.password = password;
         setRoles(roles);
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public User(){}

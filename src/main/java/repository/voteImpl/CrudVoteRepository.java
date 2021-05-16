@@ -28,5 +28,8 @@ public interface CrudVoteRepository extends JpaRepository<Vote, Integer> {
     @Query("SELECT COUNT (v) FROM Vote v WHERE v.meal.id = :mealId")
     int getSumForMeal(@Param("mealId") int mealId);
 
+    @Query("SELECT COUNT (v) FROM Vote v JOIN v.meal WHERE v.meal.date = :date")
+    int getAllSumByDate(@Param("date") LocalDate date);
+
     int deleteAllByMeal_DateAndUser_Id(LocalDate date, int userId);
 }

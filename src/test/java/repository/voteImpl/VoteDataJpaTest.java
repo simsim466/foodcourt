@@ -11,8 +11,6 @@ import service.VoteService;
 import java.time.LocalDate;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringJUnitConfig(locations = {
         "classpath:spring/spring-app.xml",
         "classpath:spring/spring-db.xml"
@@ -25,11 +23,11 @@ class VoteDataJpaTest {
     @Test
     void save() {
         Vote vote = Vote.getInstance();
-        Vote savedEntity = service.save(vote, 1033, 1012);
+        Vote savedEntity = service.saveByMeal(vote, 1033, 1012);
         System.out.println(savedEntity);
     }
 
-    @Test
+    /*@Test
     void delete() {
         LocalDate date = LocalDate.of(2021, 5, 11);
         Vote before = service.getByDate(date, 1012);
@@ -56,11 +54,20 @@ class VoteDataJpaTest {
         LocalDate date = LocalDate.of(2021, 5, 11);
         Vote vote = service.getByDate(date, 1012);
         System.out.println(vote);
-    }
+    }*/
 
     @Test
     void getVotesNumber() {
         Integer numberOfVotes = service.countVotes(1031);
         System.out.println(numberOfVotes);
+    }
+
+    @Test
+    void saveByRestaurant() {
+    }
+
+    @Test
+    void getAllVotesNumber() {
+        System.out.println(service.countAllVotes(LocalDate.now()));
     }
 }

@@ -28,7 +28,7 @@ public class VoteDataJpa implements VoteRepository {
 
     @Override
     @Transactional
-    public Vote save(Vote vote, int mealId, int userId) {
+    public Vote saveByMeal(Vote vote, int mealId, int userId) {
         LocalDateTime dateTime = LocalDateTime.now();
         if (LocalTime.of(11, 0).isBefore(dateTime.toLocalTime())) {
             return null;
@@ -48,7 +48,7 @@ public class VoteDataJpa implements VoteRepository {
         return voteRepository.save(vote);
     }
 
-    @Override//отмена голосования
+    @Override
     @Transactional
     public Boolean deleteToday(int userId) {
         LocalDateTime dateTime = LocalDateTime.now();
@@ -59,18 +59,14 @@ public class VoteDataJpa implements VoteRepository {
     }
 
     @Override
-    public List<Vote> getAllByMealId(int mealId) {
-        return voteRepository.findByMealId(mealId);
+    @Transactional
+    public Vote saveByRestaurant(Vote vote, int resId, int userId) {
+        return null;
     }
 
     @Override
-    public List<Vote> getAllByDate(LocalDate date) {
-        return voteRepository.findVotesByDate(date);
-    }
-
-    @Override
-    public Vote getByDate(LocalDate date, int userId) {
-        return voteRepository.findVoteByDateAndUser(date, userId);
+    public Integer getAllVotesNumber(LocalDate date) {
+        return voteRepository.getAllSumByDate(date);
     }
 
     @Override

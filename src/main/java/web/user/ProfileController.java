@@ -13,7 +13,7 @@ import java.net.URI;
 @RequestMapping(value = ProfileController.REST_URL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class ProfileController extends AbstractUserController {
     static final String REST_URL = "/profile";
-    static final int AUTHORIZED_ID = 10;
+    static final int AUTHORIZED_ID = 1003;
 
     @GetMapping
     public User get() {

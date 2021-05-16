@@ -15,20 +15,16 @@ public class VoteService {
         this.repository = repository;
     }
 
-    public Vote save(Vote vote, int mealId, int userId) {
-        return repository.save(vote, mealId, userId);
+    public Vote saveByMeal(Vote vote, int mealId, int userId) {
+        return repository.saveByMeal(vote, mealId, userId);
     }
 
-    public Vote getByDate(LocalDate date, int userId) {
-        return repository.getByDate(date, userId);
+    public Vote saveByRestaurant(Vote vote, int resId, int userId) {
+        return repository.saveByRestaurant(vote, resId, userId);
     }
 
-    public List<Vote> getAllByDate(LocalDate date) {
-        return repository.getAllByDate(date);
-    }
-
-    public List<Vote> getAllForMeal(int mealId) {
-        return repository.getAllByMealId(mealId);
+    public Integer countAllVotes(LocalDate date) {
+        return repository.getAllVotesNumber(date);
     }
 
     public Integer countVotes(int mealId) {
