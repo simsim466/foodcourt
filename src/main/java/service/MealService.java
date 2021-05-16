@@ -3,7 +3,7 @@ package service;
 import model.Meal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.MealRepository;
+import repository.mealImpl.MealRepository;
 
 import java.util.List;
 
@@ -20,24 +20,24 @@ public class MealService {
         return mealRepository.get(mealId);
     }
 
+    public Meal getWithRestaurant(int mealId, int resId, int userId) {
+        return mealRepository.getWithRestaurant(mealId, resId, userId);
+    }
+
+    public Meal getActualByRestaurant(int resId) {
+        return mealRepository.getActualByRestaurant(resId);
+    }
+
     public List<Meal> getAllActual() {
         return mealRepository.getAllActual();
     }
-    /*//проверить входные данные на null
-    public Meal create(Meal meal, int userId)   {
-        return mealRepository.save(meal, userId);
+
+    public void delete(int mealId, int resId, int userId) {
+        mealRepository.delete(mealId, resId, userId);
     }
-    //проверить входные данные на null
-    public Meal update(Meal meal, int userId)   {
-        return mealRepository.save(meal, userId);
+
+    public Meal create(Meal meal, int resId, int userId) {
+        return mealRepository.save(meal, userId, resId);
     }
-    //проверить результат удалось ли найти
-    public void delete(int mealId, int userId)  {
-        mealRepository.delete(mealId, userId);
-    }
-    //проверить результат удалось ли найти
-    public void vote(int mealId, int userId)    {
-        mealRepository.vote(mealId, userId);
-    }
-    */
+
 }

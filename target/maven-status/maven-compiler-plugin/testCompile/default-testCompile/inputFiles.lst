@@ -1,0 +1,6 @@
+/home/simonov/IdeaProjects/foodcourt/src/test/java/repository/restaurantImpl/RestaurantDataJpaTest.java
+/home/simonov/IdeaProjects/foodcourt/src/test/java/repository/userImpl/UserDataJpaTest.java
+/home/simonov/IdeaProjects/foodcourt/src/test/java/TestData/MealTestData.java
+/home/simonov/IdeaProjects/foodcourt/src/test/java/TestData/TestMatcher.java
+/home/simonov/IdeaProjects/foodcourt/src/test/java/repository/mealImpl/MealDataJpaTest.java
+/home/simonov/IdeaProjects/foodcourt/src/test/java/repository/voteImpl/VoteDataJpaTest.java

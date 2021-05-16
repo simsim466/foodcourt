@@ -1,13 +1,17 @@
 package service;
 
 import model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.UserRepository;
+import repository.userImpl.UserRepository;
 
-//@Service
+import java.util.List;
+
+@Service
 public class UserService {
     private final UserRepository repository;
 
+    @Autowired
     public UserService(UserRepository repository)   {
         this.repository = repository;
     }
@@ -31,4 +35,7 @@ public class UserService {
         repository.delete(userId);
     }
 
+    public List<User> getAll() {
+        return repository.getAll();
+    }
 }

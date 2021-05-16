@@ -54,6 +54,6 @@
           p:entityManagerFactory-ref="entityManagerFactory"/>
 
     <!--Сканировать пакет в поисках бинов-->
-    <context:component-scan base-package="repository.datajpa.mealImpl"/>
-    <jpa:repositories base-package="repository.datajpa.mealImpl"/>
+    <context:component-scan base-package="repository"/>
+    <jpa:repositories base-package="repository"/>
 </beans>

@@ -1,0 +1,6 @@
+repository/userImpl/UserDataJpaTest.class
+repository/voteImpl/VoteDataJpaTest.class
+repository/mealImpl/MealDataJpaTest.class
+TestData/TestMatcher.class
+repository/restaurantImpl/RestaurantDataJpaTest.class
+TestData/MealTestData.class

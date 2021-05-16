@@ -1,6 +1,7 @@
 package model;
 
 import jakarta.validation.constraints.NotNull;
+import org.hibernate.Hibernate;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -37,5 +38,43 @@ public class Vote extends AbstractEntity {
     }
 
     public Vote() {
+    }
+
+    public Meal getMeal() {
+        return meal;
+    }
+
+    public void setMeal(Meal meal) {
+        this.meal = meal;
+    }
+
+    public static Vote getInstance() {
+        return new Vote();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || !getClass().equals(Hibernate.getClass(o))) {
+            return false;
+        }
+        Vote that = (Vote) o;
+        return this.user.equals(that.user)
+                && this.meal.getDate().isEqual(that.meal.getDate());
+    }
+
+    @Override
+    public int hashCode() {
+        return user == null ? 0 : user.getId();
+    }
+
+    @Override
+    public String toString() {
+        return "Vote{" +
+                "date=" + meal.getDate() +
+                " meal=" + meal +
+                '}';
     }
 }

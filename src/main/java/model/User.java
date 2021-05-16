@@ -42,6 +42,11 @@ public class User extends AbstractNamedEntity {
 
     public User(){}
 
+    public User(String name, @Size(min = 5) @NotBlank String password) {
+        this.name = name;
+        this.password = password;
+    }
+
     public User(int id, String name, @Size(min = 5) @NotBlank String password, Role role, Role... roles) {
         this(id, name, password, EnumSet.of(role, roles));
     }

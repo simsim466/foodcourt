@@ -3,10 +3,7 @@ package model;
 import model.AbstractNamedEntity;
 import model.Meal;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -15,11 +12,16 @@ public class Dish extends AbstractNamedEntity {
     @Column(name = "price")
     private double price;
 
-    @ManyToMany(mappedBy = "dishes")
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "dishes", cascade = CascadeType.ALL)
     private List<Meal> meals;
 
     public Dish(int id, String name, double price) {
         super(id, name);
+        this.price = price;
+    }
+
+    public Dish(String name, double price) {
+        this.name = name;
         this.price = price;
     }
 
@@ -44,7 +46,8 @@ public class Dish extends AbstractNamedEntity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
-                ", meals=" + meals +
                 '}';
     }
+
+
 }

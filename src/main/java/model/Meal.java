@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name = "meals", uniqueConstraints = {@UniqueConstraint(columnNames = {"restaurant_id", "date"}, name = "meals_unique_idx")})
 public class Meal extends AbstractEntity {
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "meals_dishes", joinColumns = @JoinColumn(name = "meal_id"), inverseJoinColumns = @JoinColumn(name = "dish_id"))
     @NotNull
     private List<Dish> dishes;
@@ -39,7 +39,19 @@ public class Meal extends AbstractEntity {
         this.restaurant = restaurant;
     }
 
+    public Meal(@NotNull List<Dish> dishes) {
+        this.dishes = dishes;
+    }
+
     public Meal() {
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public void setDishes(List<Dish> dishes)    {
@@ -62,5 +74,15 @@ public class Meal extends AbstractEntity {
         return dishes.stream()
                 .mapToDouble(d -> d.getPrice())
                 .sum();
+    }
+
+    @Override
+    public String toString() {
+        return "Meal{" +
+                "id=" + id +
+                ", dishes=" + dishes +
+                ", date=" + date +
+                /*", restaurant=" + restaurant +*/
+                '}';
     }
 }
