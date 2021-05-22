@@ -5,8 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import service.RestaurantService;
+import to.RestaurantTo;
+import util.ValidationUtil;
 
 import java.util.List;
+
+import static util.ValidationUtil.*;
 
 public abstract class AbstractRestaurantController {
     protected final Logger log = LoggerFactory.getLogger(getClass());
@@ -34,15 +38,16 @@ public abstract class AbstractRestaurantController {
         return service.getForUser(resId, userId);
     }
 
-    //что resId и res одного поля ягоды
-    public void update(Restaurant restaurant, int resId, int userId) {
-        log.info("update {} with {} for user {}", restaurant, resId, userId);
-        service.create(restaurant, userId);
+    public void update(RestaurantTo resTo, int resId, int userId) {
+        log.info("update {} with {} for user {}", resTo, resId, userId);
+        assureIdConsistent(resTo, resId);
+        service.save(resTo, userId);
     }
 
-    public Restaurant create(Restaurant restaurant, int userId) {
-        log.info("create {} by user {}", restaurant, userId);
-        return service.create(restaurant, userId);
+    public Restaurant create(RestaurantTo resTo, int userId) {
+        log.info("create {} by user {}", resTo, userId);
+        checkNew(resTo);
+        return service.save(resTo, userId);
     }
 
     public void delete(int resId, int userId) {

@@ -1,6 +1,6 @@
 package repository.mealImpl;
 
-import model.Meal;
+import model.menu.Meal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -20,9 +20,14 @@ public interface CrudMealRepository extends JpaRepository<Meal, Integer> {
             " AND meal.restaurant.creator.id = ?3")
     Optional<Meal> getWithRestaurant(int mealId, int resId, int userId);
 
-    Optional<Meal> getMealByRestaurantIdAndDate(int resId, LocalDate date);
+    @Query("SELECT meal FROM Meal meal " +
+            "LEFT JOIN FETCH meal.restaurant" +
+            " WHERE meal.date= :date")
+    List<Meal> getAllActualWithRestaurant(@Param("date") LocalDate date);
 
-    List<Meal> findMealsByDate(LocalDate date);
+    List<Meal> findMealsByRestaurant_IdOrderByDateDesc(int resId);
+
+    Optional<Meal> getMealByRestaurantIdAndDate(int resId, LocalDate date);
 
     @Modifying
     @Transactional
@@ -31,4 +36,8 @@ public interface CrudMealRepository extends JpaRepository<Meal, Integer> {
 
     boolean existsMealByDateAndRestaurantId(LocalDate date, int resId);
 
+    boolean existsMealByIdAndRestaurant_Id(int mealId, int resId);
+
+    @Query("SELECT m, size(m.votes) FROM Meal m WHERE m.date =:date")
+    List<Object[]> getMealWithVotesCount(@Param("date") LocalDate date);
 }

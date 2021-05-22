@@ -1,15 +1,29 @@
 package model;
 
 import jakarta.validation.constraints.NotNull;
-import org.hibernate.Hibernate;
+import model.proto.AbstractEntity;
+import model.menu.Meal;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
+import util.DateTimeUtil;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.util.Objects;
+
+import static util.DateTimeUtil.*;
 
 @Entity
 @Table(name = "votes")
-public class Vote extends AbstractEntity {
+@IdClass(VoteId.class)
+public class Vote {
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id", nullable = false)
+    @NotNull
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @Id
+    private User user;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "meal_id", nullable = false)
@@ -17,27 +31,24 @@ public class Vote extends AbstractEntity {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Meal meal;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
+    @Id
     @NotNull
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private User user;
-
-    public Vote(Integer id, @NotNull Meal meal, @NotNull User user) {
-        super(id);
-        this.meal = meal;
-        this.user = user;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
+    @Column(name = "date", nullable = false)
+    private LocalDate date;
 
     public Vote() {
+    }
+
+    public Vote(@NotNull LocalDate date) {
+        this.date = date;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Meal getMeal() {
@@ -48,8 +59,16 @@ public class Vote extends AbstractEntity {
         this.meal = meal;
     }
 
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
     public static Vote getInstance() {
-        return new Vote();
+        return new Vote(today());
     }
 
     @Override

@@ -1,6 +1,6 @@
 package repository.mealImpl;
 
-import model.Meal;
+import model.menu.Meal;
 
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,23 +22,17 @@ public class MealDataJpa implements MealRepository {
     @Override
     @Transactional
     public Meal save(Meal meal, int userId, int resId) {
-        if ( restaurantRepository.getCreatorId(resId).get(0) != userId) {
+        if ( !restaurantRepository.existsByIdAndCreator_Id(resId, userId)) {
+            return meal;
+        }
+        if (!meal.isNew() && !mealRepository.existsMealByIdAndRestaurant_Id(meal.id(), resId)) {
             return null;
         }
-        if (!meal.isNew() && getWithRestaurant(meal.getId(), resId, userId) == null) {
+        if (meal.isNew() && mealRepository.existsMealByDateAndRestaurantId(meal.getDate(), resId)) {
             return null;
-        }
-        LocalDate now = LocalDate.now();
-        if (mealRepository.existsMealByDateAndRestaurantId(now, resId)) {
-            return null;//проверить можно ли с помощью COUNT
         }
         meal.setRestaurant(restaurantRepository.getById(resId));
-        meal.setDate(now);
         return mealRepository.save(meal);
-    }
-    @Override
-    public Meal get(int mealId) {
-        return mealRepository.findById(mealId).orElse(null);
     }
 
     @Override
@@ -47,23 +41,36 @@ public class MealDataJpa implements MealRepository {
     }
 
     @Override
-    public List<Meal> getAllActual() {
-        LocalDate today = LocalDate.now();
-        return mealRepository.findMealsByDate(today);
+    //посмотреть список всех ед но с указанием ресторана - объединить с верхним - done
+    public List<Meal> getAllActual(LocalDate date) {
+        return mealRepository.getAllActualWithRestaurant(date);
     }
 
     @Override
-    public boolean delete(int mealId, int resId, int userId) {
-        if (restaurantRepository.getCreatorId(resId).get(0) == userId) {
+    //удалить еду своего ресторана - done
+    public Boolean delete(int mealId, int resId, int userId) {
+        if (restaurantRepository.existsByIdAndCreator_Id(resId, userId)) {
             return mealRepository.delete(mealId, resId) != 0;
         }
-        return false;
+        return null;
     }
 
     @Override
-    public Meal getActualByRestaurant(int resId) {
-        LocalDate date = LocalDate.now();
+    //юзер нажимает на ресторан посмотреть текущую еду еду - done
+    public Meal getActualByRestaurant(int resId, LocalDate date) {
         return mealRepository.getMealByRestaurantIdAndDate(resId, date).orElse(null);
     }
 
+    //должно быть посмотреть историю еды для рестрана - брат того что выше - done
+    @Override
+    public List<Meal> getAllByRestaurant(int resId) {
+        return mealRepository.findMealsByRestaurant_IdOrderByDateDesc(resId);
+    }
+
+
+    //посмотреть итоги голосования дня - тоже самое только с рейтингом - НЕ СДЕЛАНО
+    @Override
+    public List<Object[]> getElectionResult(LocalDate date) {
+        return mealRepository.getMealWithVotesCount(date);
+    }
 }

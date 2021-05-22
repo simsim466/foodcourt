@@ -1,6 +1,8 @@
 package model;
 
 import com.sun.istack.NotNull;
+import model.proto.AbstractNamedEntity;
+import model.menu.Meal;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -10,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name = "restaurants", uniqueConstraints = {@UniqueConstraint(columnNames = "name", name = "restaurants_unique_idx")})
 public class Restaurant extends AbstractNamedEntity {
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "creator_user_id", nullable = false)
     @NotNull
     @OnDelete(action = OnDeleteAction.CASCADE)
@@ -26,6 +28,11 @@ public class Restaurant extends AbstractNamedEntity {
 
     public Restaurant(String name) {
         this.name = name;
+    }
+
+    public Restaurant(Integer id, String name) {
+        this.name = name;
+        this.id = id;
     }
 
     public Restaurant() {
@@ -52,7 +59,7 @@ public class Restaurant extends AbstractNamedEntity {
         return "Restaurant{" +
                 "id=" + id +
                 ", name=" + name +
-                ", creator=" + creator +
+                //", creator=" + creator +
                 '}';
     }
 }

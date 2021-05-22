@@ -3,9 +3,10 @@ package service;
 import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
 import repository.userImpl.UserRepository;
 
-import java.util.List;
+import static util.ValidationUtil.checkNotFoundWithId;
 
 @Service
 public class UserService {
@@ -16,26 +17,16 @@ public class UserService {
         this.repository = repository;
     }
 
-    //проверить результат удалось ли найти
-    public User get(int id)   {
-        return repository.get(id);
+    public User get(int userId)   {
+        return checkNotFoundWithId(repository.get(userId), userId);
     }
 
-    //проверить входные на null
-    public User create(User user) {
-        return repository.save(user);
-    }
-    //проверить входные на null
-    public User update(User user)   {
+    public User save(User user) {
+        Assert.notNull(user, "user must not be null");
         return repository.save(user);
     }
 
-    //проверить результат удалось ли найти
     public void delete(int userId)  {
-        repository.delete(userId);
-    }
-
-    public List<User> getAll() {
-        return repository.getAll();
+        checkNotFoundWithId(repository.delete(userId), userId);
     }
 }

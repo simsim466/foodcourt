@@ -11,8 +11,6 @@ import service.UserService;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringJUnitConfig(locations = {
         "classpath:spring/spring-app.xml",
         "classpath:spring/spring-db.xml"
@@ -26,7 +24,7 @@ class UserDataJpaTest {
     void save() {
         User user = new User("Дмитрий", "Глуховский");
         user.setRoles(List.of(Role.USER, Role.ADMIN));
-        User user2 = service.create(user);
+        User user2 = service.save(user);
         System.out.println(user2);
     }
 
@@ -43,11 +41,5 @@ class UserDataJpaTest {
     void get() {
         User user = service.get(1001);
         System.out.println(user);
-    }
-
-    @Test
-    void getAll() {
-        List<User> users = service.getAll();
-        System.out.println(users);
     }
 }

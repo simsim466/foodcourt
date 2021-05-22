@@ -1,34 +1,39 @@
 package web.meal;
 
-import model.Meal;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import to.MealTo;
 
+import java.time.LocalDate;
 import java.util.List;
+
+import static util.MealsUtil.*;
 
 @RestController
 @RequestMapping(value = UserMealController.USER_MEAL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class UserMealController extends AbstractMealController {
-    static final String USER_MEAL = "/meals/user";
+    static final String USER_MEAL = "/user/meals";
 
-    @Override
-    @GetMapping("/{mealId}")
-    public Meal get(@PathVariable int mealId) {
-        return super.get(mealId);
+    @GetMapping("/date")
+    //посмотреть все актуальные по дате с рестораном - DONE
+    public List<MealTo> getAll(@RequestParam LocalDate date) {
+        return asTosWithRestaurant(super.getAllActual(date));
     }
 
-    @Override
-    @GetMapping
-    public List<Meal> getAllActual() {
-        return super.getAllActual();
+    @GetMapping("/date/{resId}")
+    //done
+    public MealTo getByRestaurant(@PathVariable int resId, @RequestParam LocalDate date) {
+        return asTo(super.getActualByRestaurant(resId, date));
     }
 
-    @Override
-    @GetMapping("/meal-of-restaurant/{resId}")
-    public Meal getActualByRestaurant(@PathVariable int resId) {
-        return super.getActualByRestaurant(resId);
+    @GetMapping("/by-restaurant/{resId}")
+    //done
+    public List<MealTo> getAllForRestaurant(@PathVariable int resId) {
+        return asTos(super.getAllByRestaurant(resId));
+    }
+
+    @GetMapping("/results")
+    public List<MealTo> getElectionResults(@RequestParam LocalDate date) {
+        return asTosWithVotesNumber(super.electionResults(date));
     }
 }

@@ -2,8 +2,10 @@ package model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import model.proto.AbstractNamedEntity;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.util.CollectionUtils;
@@ -20,6 +22,7 @@ public class User extends AbstractNamedEntity {
     @Column(name = "password", nullable = false)
     @Size(min = 5)
     @NotBlank
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     @Enumerated(EnumType.STRING)
@@ -31,16 +34,21 @@ public class User extends AbstractNamedEntity {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Set<Role> roles;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    /*@OneToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "votes", joinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "meal_id", referencedColumnName = "id")})
-    @JsonIgnore
+    @JsonIgnore*/
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Vote> votes;
 
     public User(int id, String name, String password, Collection<Role> roles) {
         super(id, name);
         this.password = password;
         setRoles(roles);
+    }
+
+    public User(int id, String name) {
+        super(id, name);
     }
 
     public String getPassword() {
@@ -75,8 +83,6 @@ public class User extends AbstractNamedEntity {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", roles=" + roles +
                 '}';
     }
 }

@@ -9,31 +9,38 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import service.VoteService;
+import util.DateTimeUtil;
+
+import static util.DateTimeUtil.isLateNow;
+import static util.DateTimeUtil.today;
 
 @RestController
-@RequestMapping("/votes")
+@RequestMapping(value = "/user/{userId}/meals", produces = MediaType.APPLICATION_JSON_VALUE)
 public class VoteController {
-    static final int USER_ID = 10;
     protected final Logger log = LoggerFactory.getLogger(getClass());
 
     @Autowired
     private VoteService voteService;
 
-    @DeleteMapping("/delete-current")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete() {
-        int id = USER_ID;
-        log.info("delete user {} vote", id);
-        voteService.delete(id);
-    }
-
-    @PutMapping(value = "/vote-for/{mealId}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Vote> create(@PathVariable int mealId) {
+    @PostMapping(value = "/{mealId}/vote", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Vote> create(@PathVariable int mealId, @PathVariable int userId) {
+        log.info("vote for meal {} by user {}", mealId, userId);
+        if (isLateNow()) {
+            return ResponseEntity.badRequest().build();
+        }
         Vote vote = Vote.getInstance();
-        Vote created = voteService.saveByMeal(vote, mealId, USER_ID);
+        Vote created = voteService.save(vote, mealId, userId);
         return ResponseEntity.ok(created);
     }
 
-
-
+    @DeleteMapping("/delete")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public ResponseEntity delete(@PathVariable int userId) {
+        log.info("cancel choice by user {}", userId);
+        if (isLateNow()) {
+            return ResponseEntity.badRequest().build();
+        }
+        voteService.delete(userId, today());
+        return ResponseEntity.noContent().build();
+    }
 }

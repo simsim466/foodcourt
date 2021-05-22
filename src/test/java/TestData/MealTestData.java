@@ -1,9 +1,6 @@
 package TestData;
 
-import model.Meal;
-
-import java.time.LocalDateTime;
-import java.time.Month;
+import model.menu.Meal;
 
 public class MealTestData {
     public static final TestMatcher<Meal> MEAL_MATCHER = TestMatcher.usingIgnoringFieldsComparator();

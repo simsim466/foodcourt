@@ -1,14 +1,18 @@
 package repository.mealImpl;
 
-import model.Meal;
+import model.menu.Meal;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface MealRepository {
     Meal save(Meal meal, int userId, int resId);
-    Meal get(int mealId);
-    Meal getActualByRestaurant(int resId);
     Meal getWithRestaurant(int mealId, int resId, int userId);
-    List<Meal> getAllActual();
-    boolean delete(int mealId, int userId, int resId);
+
+    List<Object[]> getElectionResult(LocalDate date);
+
+    List<Meal> getAllByRestaurant(int resId);
+    Meal getActualByRestaurant(int resId, LocalDate date);//done
+    List<Meal> getAllActual(LocalDate date);//done
+    Boolean delete(int mealId, int userId, int resId);//done
 }

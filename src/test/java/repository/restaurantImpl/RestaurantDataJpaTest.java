@@ -7,13 +7,11 @@ import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.SqlConfig;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import service.RestaurantService;
+import to.RestaurantTo;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringJUnitConfig(locations = {
         "classpath:spring/spring-app.xml",
@@ -26,8 +24,8 @@ class RestaurantDataJpaTest {
 
     @Test
     void save() {
-        Restaurant restaurant = new Restaurant("Плакучая ива");
-        Restaurant restaurant1 = service.create(restaurant, 1001);
+        RestaurantTo restaurant = new RestaurantTo("Плакучая ива");
+        Restaurant restaurant1 = service.save(restaurant, 1001);
         System.out.println(restaurant1);
     }
 

@@ -8,6 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Transactional(readOnly = true)
 public interface CrudRestaurantRepository extends JpaRepository<Restaurant, Integer> {
@@ -22,7 +23,7 @@ public interface CrudRestaurantRepository extends JpaRepository<Restaurant, Inte
             " AND res.creator.id =:userId")
     int delete(@Param("resId") int resId, @Param("userId")int userId);
 
-    List<Restaurant> findAllByCreator_Id(int creatorId);
+    Optional<Restaurant> findRestaurantByIdAndCreator_Id(int resId, int userId);
 
     @Query("SELECT res FROM Restaurant res WHERE res.creator.id = :userId")
     List<Restaurant> getAllByUserId(@Param("userId") int userId);
@@ -30,5 +31,10 @@ public interface CrudRestaurantRepository extends JpaRepository<Restaurant, Inte
 
     @Modifying
     @Query("SELECT res.creator.id FROM Restaurant res WHERE res.id =:resId")
-    List<Integer> getCreatorId(@Param("resId")int resId);
+    List<Integer> getAllByCreatorId(@Param("resId")int resId);
+
+    boolean existsByIdAndCreator_Id(int resId, int userId);
+
+    @Query("SELECT res FROM Restaurant res JOIN FETCH res.creator WHERE res.id = ?1")
+    Optional<Restaurant> getWithUser(int resId);
 }

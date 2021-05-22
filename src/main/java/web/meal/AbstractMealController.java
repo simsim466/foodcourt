@@ -1,12 +1,12 @@
 package web.meal;
 
-import model.Meal;
+import model.menu.Meal;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import repository.mealImpl.MealRepository;
 import service.MealService;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class AbstractMealController {
@@ -25,11 +25,6 @@ public class AbstractMealController {
         service.delete(mealId, resId, userId);
     }
 
-    public Meal get(int mealId) {
-        log.info("get meal {}", mealId);
-        return service.get(mealId);
-    }
-
     //проверить имеет ли право этот пользователь создавать еду
     //проверить имеем ли мы право создавать еду в этот день в этом ресторане
     public Meal create(Meal meal, int resId, int userId)   {
@@ -37,13 +32,23 @@ public class AbstractMealController {
         return service.create(meal, resId, userId);
     }
 
-    public List<Meal> getAllActual()    {
+    public List<Meal> getAllActual(LocalDate date)    {
         log.info("getAllActual");
-        return service.getAllActual();
+        return service.getAllActual(date);
     }
 
-    public Meal getActualByRestaurant(int resId) {
-        log.info("get actual for restaurant {}", resId);
-        return service.getActualByRestaurant(resId);
+    public Meal getActualByRestaurant(int resId, LocalDate date) {
+        log.info("get by restaurant {} on {}", resId, date);
+        return service.getActualByRestaurant(resId, date);
+    }
+
+    public List<Meal> getAllByRestaurant(int resId) {
+        log.info("getAll by restaurant {}", resId);
+        return service.getAllByRestaurant(resId);
+    }
+
+    public List<Object[]> electionResults(LocalDate date) {
+        log.info("get election results on {}", date);
+        return service.getElectionResult(date);
     }
 }

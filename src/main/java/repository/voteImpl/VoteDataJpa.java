@@ -1,17 +1,16 @@
 package repository.voteImpl;
 
-import model.Meal;
 import model.User;
 import model.Vote;
+import model.VoteId;
+import model.menu.Meal;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import repository.mealImpl.CrudMealRepository;
 import repository.userImpl.CrudUserRepository;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.List;
+
+import static util.DateTimeUtil.isToday;
 
 @Repository
 public class VoteDataJpa implements VoteRepository {
@@ -27,50 +26,23 @@ public class VoteDataJpa implements VoteRepository {
     }
 
     @Override
-    @Transactional
-    public Vote saveByMeal(Vote vote, int mealId, int userId) {
-        LocalDateTime dateTime = LocalDateTime.now();
-        if (LocalTime.of(11, 0).isBefore(dateTime.toLocalTime())) {
+    public Vote save(Vote vote, int mealId, int userId) {
+        Meal meal = mealRepository.getById(mealId);
+        if (!isToday(meal.getDate())) {
             return null;
         }
-        Meal meal = mealRepository.findById(mealId).orElse(null);
-        User user = userRepository.findById(userId).orElse(null);
-
-        if (meal == null || !meal.getDate().isEqual(dateTime.toLocalDate())) {
-            return vote;
-        }
+        User user = userRepository.getById(userId);
         vote.setMeal(meal);
-        if (user == null) {
-            return vote;
-        }
         vote.setUser(user);
-        voteRepository.deleteAllByMeal_DateAndUser_Id(dateTime.toLocalDate(), userId);
         return voteRepository.save(vote);
     }
 
     @Override
-    @Transactional
-    public Boolean deleteToday(int userId) {
-        LocalDateTime dateTime = LocalDateTime.now();
-        if (LocalTime.of(11, 0).isBefore(dateTime.toLocalTime())) {
-            return null;
+    public boolean delete(int userId, LocalDate date) {
+        if (!voteRepository.existsById(new VoteId(userId, date))) {
+            return false;
         }
-        return voteRepository.deleteAllByMeal_DateAndUser_Id(dateTime.toLocalDate(), userId) != 0;
-    }
-
-    @Override
-    @Transactional
-    public Vote saveByRestaurant(Vote vote, int resId, int userId) {
-        return null;
-    }
-
-    @Override
-    public Integer getAllVotesNumber(LocalDate date) {
-        return voteRepository.getAllSumByDate(date);
-    }
-
-    @Override
-    public Integer getVotesNumber(int mealId) {
-        return voteRepository.getSumForMeal(mealId);
+        voteRepository.deleteById(new VoteId(userId, date));
+        return true;
     }
 }

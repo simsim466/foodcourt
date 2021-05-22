@@ -2,10 +2,14 @@ package service;
 
 import model.Vote;
 import org.springframework.stereotype.Service;
+import org.springframework.util.Assert;
 import repository.voteImpl.VoteRepository;
+import util.ValidationUtil;
 
 import java.time.LocalDate;
 import java.util.List;
+
+import static util.ValidationUtil.*;
 
 @Service
 public class VoteService {
@@ -15,23 +19,12 @@ public class VoteService {
         this.repository = repository;
     }
 
-    public Vote saveByMeal(Vote vote, int mealId, int userId) {
-        return repository.saveByMeal(vote, mealId, userId);
+    public Vote save(Vote vote, int  mealId, int userId) {
+        Assert.notNull(vote, "vote must not be null");
+        return checkNotFound(repository.save(vote, mealId, userId), "id=" + mealId + "on this day");
     }
 
-    public Vote saveByRestaurant(Vote vote, int resId, int userId) {
-        return repository.saveByRestaurant(vote, resId, userId);
-    }
-
-    public Integer countAllVotes(LocalDate date) {
-        return repository.getAllVotesNumber(date);
-    }
-
-    public Integer countVotes(int mealId) {
-        return repository.getVotesNumber(mealId);
-    }
-
-    public void delete(int userId) {
-        repository.deleteToday(userId);
+    public void delete(int userId, LocalDate date) {
+        checkNotFound(repository.delete(userId, date), "id=" + userId + " (user) among votes on " + date);
     }
 }

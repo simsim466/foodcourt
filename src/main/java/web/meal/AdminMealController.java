@@ -1,35 +1,40 @@
 package web.meal;
 
-import model.Meal;
-import model.Restaurant;
+import model.menu.Meal;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import to.MealTo;
 
 import java.net.URI;
+
+import static util.MealsUtil.*;
+import static util.ValidationUtil.*;
 
 @RestController
 @RequestMapping(value = AdminMealController.ADMIN_MEAL, produces = MediaType.APPLICATION_JSON_VALUE)
 public class AdminMealController extends AbstractMealController {
-    static final String ADMIN_MEAL = "/meal/admin";
-    static final int ADMIN_ID = 10;
+    static final String ADMIN_MEAL = "/admin/{userId}/restaurants/{resId}/meals";
 
-    @GetMapping("/{mealId}/{resId}")
-    public Meal getWithRestaurant(@PathVariable int mealId, @PathVariable int resId) {
-        return super.getWithRestaurant(mealId, resId, ADMIN_ID);
+    @GetMapping("/{mealId}")
+    public Meal getWithRestaurant(@PathVariable int mealId, @PathVariable int resId, @PathVariable int userId) {
+        return super.getWithRestaurant(mealId, resId, userId);
     }
-
-    @DeleteMapping("/{mealId}/{resId}")
+    //done
+    @DeleteMapping("/{mealId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable int mealId, @PathVariable int resId) {
-        super.delete(mealId, resId, ADMIN_ID);
+    public void delete(@PathVariable int mealId, @PathVariable int resId, @PathVariable int userId) {
+        super.delete(mealId, resId, userId);
     }
 
-    @PutMapping(value = "/{resId}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Meal> createWithLocation(@RequestBody Meal meal, @PathVariable int resId) {
-        Meal created = super.create(meal, resId, ADMIN_ID);
+    @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Meal> createWithLocation(@RequestBody MealTo mealTo,
+                                                   @PathVariable int resId, @PathVariable int userId) {
+        checkNew(mealTo);
+        Meal created = createFromTo(mealTo);
+        super.create(created, resId, userId);
 
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()
                 .path(ADMIN_MEAL + "/{id}")
@@ -38,9 +43,11 @@ public class AdminMealController extends AbstractMealController {
         return ResponseEntity.created(uriOfNewResource).body(created);
     }
 
-    @PutMapping("/{resId}")
+    @PutMapping(value = "/{mealId}", consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void update(@RequestBody Meal meal, @PathVariable int resId) {
-        super.create(meal, resId, ADMIN_ID);
+    public void update(@RequestBody MealTo mealTo, @PathVariable int mealId,
+                       @PathVariable int resId, @PathVariable int userId) {
+        assureIdConsistent(mealTo, mealId);
+        super.create(convertFromTo(mealTo), resId, userId);
     }
 }

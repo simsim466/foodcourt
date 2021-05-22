@@ -22,52 +22,16 @@ class VoteDataJpaTest {
 
     @Test
     void save() {
-        Vote vote = Vote.getInstance();
-        Vote savedEntity = service.saveByMeal(vote, 1033, 1012);
-        System.out.println(savedEntity);
+        Vote vote = new Vote(LocalDate.now());
+        Vote response = service.save(vote, 1033, 1013);
+        System.out.println(response.getUser());
     }
 
-    /*@Test
+    @Test
     void delete() {
-        LocalDate date = LocalDate.of(2021, 5, 11);
-        Vote before = service.getByDate(date, 1012);
-        service.delete(1012);
-        Vote after = service.getByDate(date, 1012);
-        System.out.println(after);
+        //System.out.println(service.get(1011));
+        service.delete(1011, LocalDate.now());
+        //System.out.println(service.get(1011));
     }
 
-    @Test
-    void getAllByMealId() {
-        List<Vote> votes = service.getAllForMeal(1031);
-        System.out.println(votes);
-    }
-
-    @Test
-    void getAllByDate() {
-        LocalDate date = LocalDate.of(2021, 5, 11);
-        List<Vote> votes = service.getAllByDate(date);
-        System.out.println(votes);
-    }
-
-    @Test
-    void getByDate() {
-        LocalDate date = LocalDate.of(2021, 5, 11);
-        Vote vote = service.getByDate(date, 1012);
-        System.out.println(vote);
-    }*/
-
-    @Test
-    void getVotesNumber() {
-        Integer numberOfVotes = service.countVotes(1031);
-        System.out.println(numberOfVotes);
-    }
-
-    @Test
-    void saveByRestaurant() {
-    }
-
-    @Test
-    void getAllVotesNumber() {
-        System.out.println(service.countAllVotes(LocalDate.now()));
-    }
 }
