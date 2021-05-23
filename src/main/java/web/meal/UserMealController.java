@@ -1,5 +1,6 @@
 package web.meal;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import to.MealTo;
@@ -14,26 +15,24 @@ import static util.MealsUtil.*;
 public class UserMealController extends AbstractMealController {
     static final String USER_MEAL = "/user/meals";
 
-    @GetMapping("/date")
-    //посмотреть все актуальные по дате с рестораном - DONE
-    public List<MealTo> getAll(@RequestParam LocalDate date) {
+    @GetMapping()
+    public List<MealTo> getAll(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         return asTosWithRestaurant(super.getAllActual(date));
     }
 
-    @GetMapping("/date/{resId}")
-    //done
-    public MealTo getByRestaurant(@PathVariable int resId, @RequestParam LocalDate date) {
+    @GetMapping("/{resId}")
+    public MealTo getByRestaurant(@PathVariable int resId,
+                                  @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         return asTo(super.getActualByRestaurant(resId, date));
     }
 
     @GetMapping("/by-restaurant/{resId}")
-    //done
     public List<MealTo> getAllForRestaurant(@PathVariable int resId) {
         return asTos(super.getAllByRestaurant(resId));
     }
 
     @GetMapping("/results")
-    public List<MealTo> getElectionResults(@RequestParam LocalDate date) {
+    public List<MealTo> getElectionResults(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         return asTosWithVotesNumber(super.electionResults(date));
     }
 }

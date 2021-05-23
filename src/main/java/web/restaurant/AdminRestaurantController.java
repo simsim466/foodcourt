@@ -15,37 +15,36 @@ import java.util.List;
 @RestController
 @RequestMapping(value = AdminRestaurantController.RESTAURANT_ADMIN, produces = MediaType.APPLICATION_JSON_VALUE)
 public class AdminRestaurantController extends AbstractRestaurantController {
-    static final int ADMIN_ID = 1012;
-    static final String RESTAURANT_ADMIN = "/admin/restaurants";
-    //done
+    static final String RESTAURANT_ADMIN = "/admin/{userId}/restaurants";
+
     @DeleteMapping("/{resId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable int resId) {
-        super.delete(resId, ADMIN_ID);
+    public void delete(@PathVariable int resId, @PathVariable int userId) {
+        super.delete(resId, userId);
     }
-    //done
+
     @GetMapping
-    public List<RestaurantTo> getAllForUser() {
-        return RestaurantsUtil.asTos(super.getAllForUser(ADMIN_ID), true);
+    public List<RestaurantTo> allForUser(@PathVariable int userId) {
+        return RestaurantsUtil.asTos(super.getAllForUser(userId), true);
     }
-    //done
+
     @GetMapping("/{resId}")
-    public RestaurantTo getForUser(@PathVariable int resId) {
-        return RestaurantsUtil.asToWithMeal(super.getForUser(resId, ADMIN_ID), true);
+    public RestaurantTo forUser(@PathVariable int resId, @PathVariable int userId) {
+        return RestaurantsUtil.asTo(super.getForUser(resId, userId), true);
     }
-    //done
+
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Restaurant> createWithLocation(@RequestBody RestaurantTo resTo) {
-        Restaurant created = super.create(resTo, ADMIN_ID);
+    public ResponseEntity<Restaurant> createWithLocation(@RequestBody RestaurantTo resTo, @PathVariable int userId) {
+        Restaurant created = super.create(resTo, userId);
         URI uriOfNewEntity = ServletUriComponentsBuilder.fromCurrentContextPath()
-                .path(RESTAURANT_ADMIN + "/{id}")
-                .buildAndExpand(created.getId()).toUri();
+                .path("/admin/" + userId + "/restaurants" + "/{id}")
+                .buildAndExpand(created.id()).toUri();
         return ResponseEntity.created(uriOfNewEntity).body(created);
     }
-    //done
+
     @PutMapping("/{resId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void update(@RequestBody RestaurantTo resTo,@PathVariable int resId) {
-        super.update(resTo, resId, ADMIN_ID);
+    public void update(@RequestBody RestaurantTo resTo,@PathVariable int resId, @PathVariable int userId) {
+        super.update(resTo, resId, userId);
     }
 }

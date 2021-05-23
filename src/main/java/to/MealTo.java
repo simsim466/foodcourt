@@ -63,6 +63,10 @@ public class MealTo extends BaseTo {
         this.votesNumber = votesNumber;
     }
 
+    public Integer getVotesNumber() {
+        return votesNumber;
+    }
+
     public void setRestaurant(RestaurantTo restaurant) {
         this.restaurant = restaurant;
     }

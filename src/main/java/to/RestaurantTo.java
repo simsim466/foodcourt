@@ -15,11 +15,12 @@ public class RestaurantTo extends BaseNamedTo {
         this.enable = enable;
     }
 
+    public RestaurantTo() {};
+
     public RestaurantTo(String name) {
         this.name = name;
     }
 
-    //для приема с фронтенда
     public RestaurantTo(Integer id, String name) {
         super(id, name);
     }

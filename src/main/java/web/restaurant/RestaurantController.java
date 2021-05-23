@@ -18,7 +18,7 @@ public class RestaurantController extends AbstractRestaurantController {
 
     @GetMapping("/{resId}")
     public RestaurantTo getForSimpleUser(@PathVariable int resId) {
-        return asToWithMeal(super.get(resId), false);
+        return asTo(super.get(resId), false);
     }
 
     @GetMapping

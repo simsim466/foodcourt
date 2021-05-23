@@ -1,5 +1,6 @@
 package model.menu;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import model.proto.AbstractNamedEntity;
 
 import javax.persistence.*;
@@ -11,7 +12,8 @@ public class Dish extends AbstractNamedEntity {
     @Column(name = "price")
     private double price;
 
-    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "dishes", cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "dishes", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<Meal> meals;
 
     public Dish(int id, String name, double price) {

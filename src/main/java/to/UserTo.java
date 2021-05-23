@@ -10,6 +10,13 @@ public class UserTo extends BaseNamedTo {
         super(id, name);
     }
 
+    public UserTo() {}
+
+    public UserTo(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
     //для самого авторизованного пользователя
     public UserTo setPasswordAndReturn(String password) {
         this.password = password;
@@ -18,6 +25,10 @@ public class UserTo extends BaseNamedTo {
 
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override

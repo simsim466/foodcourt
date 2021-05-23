@@ -25,6 +25,9 @@ public interface CrudRestaurantRepository extends JpaRepository<Restaurant, Inte
 
     Optional<Restaurant> findRestaurantByIdAndCreator_Id(int resId, int userId);
 
+    @Query("SELECT res FROM Restaurant res WHERE res.creator.id = :userId AND res.id =:resId")
+    Optional<Restaurant> getForUser(@Param("resId") int resId, @Param("userId") int userId);
+
     @Query("SELECT res FROM Restaurant res WHERE res.creator.id = :userId")
     List<Restaurant> getAllByUserId(@Param("userId") int userId);
 

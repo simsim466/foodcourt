@@ -39,6 +39,7 @@ public class User extends AbstractNamedEntity {
             inverseJoinColumns = {@JoinColumn(name = "meal_id", referencedColumnName = "id")})
     @JsonIgnore*/
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    @JsonIgnore
     private List<Vote> votes;
 
     public User(int id, String name, String password, Collection<Role> roles) {
