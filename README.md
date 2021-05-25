@@ -63,8 +63,20 @@
 `curl -s http://localhost:8080/foodcourt/user/meals/results?date=2021-05-22`
 
 ###AdminMealController
+#### get meal 1031 with restaurant by its owner 1012
+`curl -s http://localhost:8080/foodcourt/admin/1012/restaurants/1017/meals/1031`
+#### delete meal 1031 in restaurant 1017 by admin
+`curl -s -X DELETE http://localhost:8080/foodcourt/admin/1012/restaurants/1017/meals/1031`
+#### create new meal in restaurant 1017 by user 1012
+`curl -s -X PUT -d ' {"dishes":[{"name": "Головы щучьи с чесноком", "price": 32.1}, {"name": "Икра красная", "price": 299.0}, {"name": "Икра черная", "price": 299.0}, { "name": "Fanta", "price": 29.0}]}' -H 'Content-Type: application/json' http://localhost:8080/foodcourt/admin/1012/restaurants/1017/meals`
+#### update meal 1031 in the restaurant 1017 by admin 1012
+`curl -s -X PUT -d ' {"id": 1032, "dishes":[{"name": "Головы щучьи с чесноком", "price": 32.1}, {"name": "Икра красная", "price": 299.0}, {"name": "Икра черная", "price": 299.0}, { "name": "Fanta", "price": 29.0}], "date": [2021, 5, 26]}' -H 'Content-Type: application/json' http://localhost:8080/foodcourt/admin/1012/restaurants/1017/meals/1031`
 
 ###VoteController
+#### vote for the meal 1032
+`curl -s -X POST -d '{}' -H 'Content-Type:application/json;charset=UTF-8' http://localhost:8080/foodcourt/users/1004/meals/1032/vote`
+#### cancel today vote of the user 1004
+`curl -s -X DELETE http://localhost:8080/foodcourt/users/1004/meals/cancel-vote`
 
 ## Вопрос
 Для наличия в БД актуальных на сегоднящний день данных рекомендуется использовать команду now при популировании. Я ее использовал, но репозиторий перестал распознавать такие данные как сегодняшние. Поэтому пришлось вернуться к исходному варианту,т. е. заменить команду now на введенные в ручную значения. Что было сделано не так в данном аспекте?
