@@ -77,9 +77,3 @@
 `curl -s -X POST -d '{}' -H 'Content-Type:application/json;charset=UTF-8' http://localhost:8080/foodcourt/users/1004/meals/1032/vote`
 #### cancel today vote of the user 1004
 `curl -s -X DELETE http://localhost:8080/foodcourt/users/1004/meals/cancel-vote`
-
-## Вопрос
-Для наличия в БД актуальных на сегоднящний день данных рекомендуется использовать команду now при популировании. Я ее использовал, но репозиторий перестал распознавать такие данные как сегодняшние. Поэтому пришлось вернуться к исходному варианту,т. е. заменить команду now на введенные в ручную значения. Что было сделано не так в данном аспекте?
-
-## Примечание
-команды для VoteController и AdminMealController пока не загружены
