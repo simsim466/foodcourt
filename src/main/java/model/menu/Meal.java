@@ -1,5 +1,6 @@
 package model.menu;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import model.Restaurant;
 import model.Vote;
@@ -29,9 +30,11 @@ public class Meal extends AbstractEntity {
     @JoinColumn(name = "restaurant_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @NotNull
+    @JsonIgnore
     private Restaurant restaurant;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "meal")
+    @JsonIgnore
     /*@JoinTable(name = "votes", joinColumns = {@JoinColumn(name = "meal_id", referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "user_id", referencedColumnName = "id")})*/
     private List<Vote> votes;

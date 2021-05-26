@@ -32,6 +32,7 @@ public class User extends AbstractNamedEntity {
     @JoinColumn(table = "users", name = "user_id")
     @ElementCollection(fetch = FetchType.EAGER)
     @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
     private Set<Role> roles;
 
     /*@OneToMany(fetch = FetchType.LAZY)

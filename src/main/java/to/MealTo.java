@@ -35,6 +35,9 @@ public class MealTo extends BaseTo {
         this.votesNumber = votesNumber;
     }
 
+    public MealTo() {
+    }
+
     public MealTo(List<Dish> dishes) {
         this.dishes = dishes;
     }

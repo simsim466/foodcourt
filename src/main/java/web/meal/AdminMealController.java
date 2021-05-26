@@ -19,10 +19,10 @@ public class AdminMealController extends AbstractMealController {
     static final String ADMIN_MEAL = "/admin/{userId}/restaurants/{resId}/meals";
 
     @GetMapping("/{mealId}")
-    public Meal getWithRestaurant(@PathVariable int mealId, @PathVariable int resId, @PathVariable int userId) {
-        return super.getWithRestaurant(mealId, resId, userId);
+    public MealTo get(@PathVariable int mealId, @PathVariable int resId, @PathVariable int userId) {
+        return asToWithRestaurant(super.getWithRestaurant(mealId, resId, userId));
     }
-    //done
+
     @DeleteMapping("/{mealId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable int mealId, @PathVariable int resId, @PathVariable int userId) {
@@ -33,11 +33,10 @@ public class AdminMealController extends AbstractMealController {
     public ResponseEntity<Meal> createWithLocation(@RequestBody MealTo mealTo,
                                                    @PathVariable int resId, @PathVariable int userId) {
         checkNew(mealTo);
-        Meal created = createFromTo(mealTo);
-        super.create(created, resId, userId);
+        Meal created = super.create(createFromTo(mealTo), resId, userId);
 
         URI uriOfNewResource = ServletUriComponentsBuilder.fromCurrentContextPath()
-                .path(ADMIN_MEAL + "/{id}")
+                .path("/admin/" + userId + "/restaurants/" + resId + "/meals/" + "{id}")
                 .buildAndExpand(created.getId()).toUri();
 
         return ResponseEntity.created(uriOfNewResource).body(created);

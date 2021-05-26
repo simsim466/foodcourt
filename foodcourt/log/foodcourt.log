@@ -24499,3 +24499,693 @@ java.lang.IllegalStateException: Cannot call sendError() after the response has 
 2021-05-23 03:10:01,589 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
 2021-05-23 03:10:02,150 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 561 ms
 2021-05-23 03:10:30,549 INFO  UserMealController [AbstractMealController.java:51] get election results on 2021-05-22
+2021-05-23 09:57:44,682 INFO  UserMealController [AbstractMealController.java:51] get election results on 2021-05-22
+2021-05-23 09:58:13,495 INFO  UserMealController [AbstractMealController.java:51] get election results on 2021-05-01
+2021-05-24 09:40:12,178 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-24 09:40:12,807 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 09:40:12,978 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 135 ms. Found 4 JPA repository interfaces.
+2021-05-24 09:40:13,481 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 09:40:13,890 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-24 09:40:14,187 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 09:40:15,453 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-24 09:40:16,228 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-24 09:40:16,717 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 09:40:16,732 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 09:40:17,848 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5643 ms
+2021-05-24 09:40:17,871 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-24 09:40:18,681 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 810 ms
+2021-05-24 09:41:09,729 INFO  AdminMealController [AbstractMealController.java:19] get 1031 of restaurant 1017 for owner 1012
+2021-05-24 11:52:32,219 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-24 11:52:32,806 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 11:52:32,986 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 146 ms. Found 4 JPA repository interfaces.
+2021-05-24 11:52:33,479 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 11:52:33,792 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-24 11:52:34,063 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 11:52:35,383 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-24 11:52:36,262 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-24 11:52:36,728 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 11:52:36,739 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 11:52:37,808 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5560 ms
+2021-05-24 11:52:37,833 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-24 11:52:38,623 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 790 ms
+2021-05-24 11:53:14,924 INFO  AdminMealController [AbstractMealController.java:19] get 1031 of restaurant 1017 for owner 1012
+2021-05-24 11:55:15,620 INFO  RestaurantController [AbstractRestaurantController.java:27] getAll
+2021-05-24 11:55:24,519 INFO  AdminMealController [AbstractMealController.java:19] get 1031 of restaurant 1017 for owner 1012
+2021-05-24 14:48:45,320 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-24 14:48:53,847 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 14:48:54,704 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 571 ms. Found 4 JPA repository interfaces.
+2021-05-24 14:48:55,710 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 14:48:56,059 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-24 14:48:56,305 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 14:48:57,540 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-24 14:48:58,203 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-24 14:48:58,750 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 14:48:58,762 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 14:49:00,881 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 15391 ms
+2021-05-24 14:49:00,916 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-24 14:49:01,975 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1058 ms
+2021-05-24 14:49:13,012 INFO  AdminMealController [AbstractMealController.java:19] get 1031 of restaurant 1017 for owner 1012
+2021-05-24 15:00:00,589 INFO  AdminMealController [AbstractMealController.java:24] delete meal 1031 of restaurant 1017 and user 1012
+2021-05-24 15:01:09,427 INFO  AdminMealController [AbstractMealController.java:24] delete meal 1031 of restaurant 1017 and user 1012
+2021-05-24 15:01:09,491 WARN  SqlExceptionHelper [SqlExceptionHelper.java:230] SQL Warning Code: -1100, SQLState: 02000
+2021-05-24 15:01:09,491 WARN  SqlExceptionHelper [SqlExceptionHelper.java:231] no data
+2021-05-24 15:16:15,770 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-24 15:16:16,403 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 15:16:16,552 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 134 ms. Found 4 JPA repository interfaces.
+2021-05-24 15:16:16,946 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 15:16:17,061 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-24 15:16:17,238 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 15:16:18,210 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-24 15:16:18,867 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-24 15:16:19,353 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 15:16:19,365 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 15:16:20,527 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 4755 ms
+2021-05-24 15:16:20,574 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-24 15:16:21,270 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 696 ms
+2021-05-24 15:32:44,222 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-24 15:32:44,622 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24 15:32:44,747 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 107 ms. Found 4 JPA repository interfaces.
+2021-05-24 15:32:45,138 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24 15:32:45,207 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-24 15:32:45,424 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24 15:32:46,290 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-24 15:32:46,837 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-24 15:32:47,288 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24 15:32:47,300 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24 15:32:48,398 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 4173 ms
+2021-05-24 15:32:48,431 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-24 15:32:49,109 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 677 ms
+2021-05-24 15:33:01,715 INFO  AdminMealController [AbstractMealController.java:19] get 1031 of restaurant 1017 for owner 1012
+2021-05-25 00:45:38,435 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 00:45:39,113 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 00:45:39,306 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 165 ms. Found 4 JPA repository interfaces.
+2021-05-25 00:45:40,075 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 00:45:40,481 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 00:45:40,716 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 00:45:41,917 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 00:45:42,657 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 00:45:43,144 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 00:45:43,155 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 00:45:44,465 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5997 ms
+2021-05-25 00:45:44,497 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 00:45:45,283 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 786 ms
+2021-05-25 00:49:08,394 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 00:49:09,053 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 00:49:09,265 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 193 ms. Found 4 JPA repository interfaces.
+2021-05-25 00:49:09,742 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 00:49:09,864 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 00:49:10,059 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 00:49:11,306 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 00:49:11,874 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 00:49:12,338 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 00:49:12,349 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 00:49:14,232 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5815 ms
+2021-05-25 00:49:14,289 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 00:49:15,182 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 893 ms
+2021-05-25 00:49:24,722 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-25} in restaurant 1017 by user 1012
+2021-05-25 00:49:25,049 WARN  SqlExceptionHelper [SqlExceptionHelper.java:137] SQL Error: -104, SQLState: 23505
+2021-05-25 00:49:25,050 ERROR SqlExceptionHelper [SqlExceptionHelper.java:142] integrity constraint violation: unique constraint or index violation; DISHES_UNIQUE_IDX table: DISHES
+2021-05-25 00:51:22,465 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 00:51:22,904 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 00:51:23,043 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 120 ms. Found 4 JPA repository interfaces.
+2021-05-25 00:51:23,445 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 00:51:23,520 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 00:51:23,694 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 00:51:24,465 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 00:51:24,939 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 00:51:25,358 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 00:51:25,376 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 00:51:26,569 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 4100 ms
+2021-05-25 00:51:26,608 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 00:51:27,376 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 768 ms
+2021-05-25 00:51:35,316 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-25} in restaurant 1017 by user 1012
+2021-05-25 16:29:42,306 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 16:29:42,633 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 16:29:42,741 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 93 ms. Found 4 JPA repository interfaces.
+2021-05-25 16:29:43,083 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 16:29:43,157 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 16:29:43,362 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 16:29:43,824 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 16:29:44,336 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 16:29:44,859 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 16:29:44,875 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 16:29:45,838 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 3530 ms
+2021-05-25 16:29:45,869 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 16:29:46,421 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 551 ms
+2021-05-25 16:30:05,949 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 16:31:08,854 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 16:31:09,267 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 16:31:09,408 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 121 ms. Found 4 JPA repository interfaces.
+2021-05-25 16:31:09,792 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 16:31:09,854 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 16:31:10,019 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 16:31:10,711 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 16:31:11,195 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 16:31:11,604 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 16:31:11,615 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 16:31:12,564 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 3705 ms
+2021-05-25 16:31:12,595 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 16:31:13,167 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 572 ms
+2021-05-25 16:31:39,786 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 16:54:56,623 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 16:55:07,175 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 16:56:27,930 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 16:56:28,355 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 16:56:28,508 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 140 ms. Found 4 JPA repository interfaces.
+2021-05-25 16:56:29,049 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 16:56:29,388 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 16:56:29,620 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 16:56:30,662 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 16:56:31,284 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 16:56:31,740 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 16:56:31,752 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 16:56:33,016 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5080 ms
+2021-05-25 16:56:33,049 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 16:56:33,763 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 714 ms
+2021-05-25 17:17:03,590 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 17:37:10,757 WARN  DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain' not supported]
+2021-05-25 17:38:22,937 WARN  DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain' not supported]
+2021-05-25 17:38:52,322 WARN  DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain' not supported]
+2021-05-25 17:39:20,972 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=1055, dishes=[Dish{id=1056, name='Головы щучьи с чесноком', price=32.1}, Dish{id=1057, name='Икра красная', price=299.0}, Dish{id=1058, name='Икра черная', price=299.0}, Dish{id=1059, name='Fanta', price=29.0}], date=2021-05-28} in restaurant 1017 by user 1012
+2021-05-25 18:07:40,892 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 18:07:41,531 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 18:07:41,781 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 188 ms. Found 4 JPA repository interfaces.
+2021-05-25 18:07:42,255 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 18:07:42,598 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 18:07:42,841 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 18:07:44,082 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 18:07:44,783 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 18:07:45,255 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 18:07:45,266 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 18:07:46,392 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5468 ms
+2021-05-25 18:07:46,410 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 18:07:47,176 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 765 ms
+2021-05-25 18:11:36,006 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=null, dishes=[Dish{id=null, name='Головы щучьи с чесноком', price=32.1}, Dish{id=null, name='Икра красная', price=299.0}, Dish{id=null, name='Икра черная', price=299.0}, Dish{id=null, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 18:12:06,473 INFO  AdminMealController [AbstractMealController.java:31] create Meal{id=1055, dishes=[Dish{id=1056, name='Головы щучьи с луком', price=32.1}, Dish{id=1057, name='Икра красная', price=299.0}, Dish{id=1058, name='Икра черная', price=299.0}, Dish{id=1059, name='Fanta', price=29.0}], date=2021-05-26} in restaurant 1017 by user 1012
+2021-05-25 18:54:02,290 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 18:54:02,938 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 18:54:03,100 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+2021-05-25 18:54:03,563 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 18:54:03,908 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 18:54:04,180 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 18:54:15,108 WARN  JdbcEnvironmentInitiator [JdbcEnvironmentInitiator.java:132] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@27eee49d[file =/tmp/foodcourt.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2021-05-25 15:54:14 heartbeat - read: -7628 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4716)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5177)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1671)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:459)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1406)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@27eee49d[file =/tmp/foodcourt.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2021-05-25 15:54:14 heartbeat - read: -7628 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 90 common frames omitted
+2021-05-25 18:54:15,144 ERROR LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:426] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-05-25 18:54:15,145 WARN  XmlWebApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-05-25 18:54:15,148 ERROR ContextLoader [ContextLoader.java:313] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4716)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5177)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1671)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:459)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1406)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 58 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 75 common frames omitted
+2021-05-25 18:56:09,873 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 18:56:10,463 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 18:56:10,614 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 122 ms. Found 4 JPA repository interfaces.
+2021-05-25 18:56:11,110 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 18:56:11,419 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 18:56:11,718 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 18:56:13,150 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 18:56:13,802 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 18:56:14,314 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 18:56:14,329 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 18:56:15,428 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5539 ms
+2021-05-25 18:56:15,453 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 18:56:16,219 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 765 ms
+2021-05-25 18:56:59,726 WARN  DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type '' not supported]
+2021-05-25 18:57:29,433 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:00:09,983 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:00:10,622 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:00:10,752 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 98 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:00:11,150 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:00:11,253 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:00:11,461 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:00:12,603 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 19:00:13,275 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 19:00:13,727 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 19:00:13,738 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 19:00:14,850 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 4864 ms
+2021-05-25 19:00:14,893 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 19:00:15,582 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 689 ms
+2021-05-25 19:03:17,859 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:07:23,585 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:07:24,263 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:07:24,438 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 141 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:07:25,018 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:07:25,441 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:07:25,727 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:07:26,856 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 19:07:27,783 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 19:07:28,407 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 19:07:28,421 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 19:07:29,938 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 6338 ms
+2021-05-25 19:07:29,964 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 19:07:30,815 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 850 ms
+2021-05-25 19:10:31,287 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:13:40,440 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:13:41,063 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:13:41,210 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 131 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:13:41,801 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:13:42,086 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:13:42,511 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:13:45,357 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 19:13:47,486 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 19:13:48,706 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 19:13:48,784 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 19:13:50,480 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 10037 ms
+2021-05-25 19:13:50,508 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 19:13:51,348 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 840 ms
+2021-05-25 19:14:24,591 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:17:18,131 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:17:18,752 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:17:19,023 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 250 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:17:19,580 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:17:20,004 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:17:20,253 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:17:21,406 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 19:17:22,037 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 19:17:22,628 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 19:17:22,643 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 19:17:24,494 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 6360 ms
+2021-05-25 19:17:24,518 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 19:17:25,450 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 932 ms
+2021-05-25 19:18:11,464 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:20:23,317 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:20:23,945 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:20:24,145 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 146 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:20:24,645 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:20:25,025 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:20:25,288 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:20:26,794 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 19:20:27,647 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 19:20:28,089 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 19:20:28,104 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 19:20:29,279 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 5949 ms
+2021-05-25 19:20:29,303 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 19:20:30,043 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 740 ms
+2021-05-25 19:21:28,109 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:42:57,020 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:42:57,748 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:42:57,975 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 211 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:42:58,501 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:42:58,673 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:42:58,919 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:43:09,879 WARN  JdbcEnvironmentInitiator [JdbcEnvironmentInitiator.java:132] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@27eee49d[file =/tmp/foodcourt.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2021-05-25 16:43:08 heartbeat - read: -1773 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:155)
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:146)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205)
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4716)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5177)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1671)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:459)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1406)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@27eee49d[file =/tmp/foodcourt.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2021-05-25 16:43:08 heartbeat - read: -1773 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 90 common frames omitted
+2021-05-25 19:43:09,955 ERROR LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:426] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-05-25 19:43:09,957 WARN  XmlWebApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2021-05-25 19:43:09,962 ERROR ContextLoader [ContextLoader.java:313] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [spring/spring-db.xml]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:401)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:292)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4716)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5177)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1671)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:459)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1406)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 58 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 75 common frames omitted
+2021-05-25 19:47:04,390 INFO  ContextLoader [ContextLoader.java:271] Root WebApplicationContext: initialization started
+2021-05-25 19:47:04,726 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-25 19:47:04,832 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 91 ms. Found 4 JPA repository interfaces.
+2021-05-25 19:47:05,221 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-25 19:47:05,285 INFO  Version [Version.java:44] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-05-25 19:47:05,460 INFO  Version [JavaReflectionManager.java:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-25 19:47:06,307 INFO  Dialect [Dialect.java:175] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-05-25 19:47:06,889 INFO  PojoInstantiator [PojoInstantiator.java:67] HHH000182: No default (no-argument) constructor for class: model.election.Golos$GolosId (class must be instantiated by Interceptor)
+2021-05-25 19:47:07,336 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-25 19:47:07,347 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-25 19:47:08,411 INFO  ContextLoader [ContextLoader.java:307] Root WebApplicationContext initialized in 4018 ms
+2021-05-25 19:47:08,445 INFO  DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'mvc-dispatcher'
+2021-05-25 19:47:09,215 INFO  DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 769 ms
+2021-05-25 19:47:33,364 INFO  VoteController [VoteController.java:27] vote for meal 1032 by user 1004
+2021-05-25 19:48:01,975 WARN  PageNotFound [DispatcherServlet.java:1271] No mapping for DELETE /foodcourt/users/1004/meals/1032/cancel-vote
+2021-05-25 19:48:01,976 WARN  PageNotFound [DefaultHandlerExceptionResolver.java:516] No handler found for DELETE /foodcourt/users/1004/meals/1032/cancel-vote
+2021-05-25 19:48:01,977 WARN  DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for DELETE /foodcourt/users/1004/meals/1032/cancel-vote]
+2021-05-25 19:48:50,977 INFO  VoteController [VoteController.java:39] cancel choice by user 1004

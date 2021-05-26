@@ -9,13 +9,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import service.VoteService;
-import util.DateTimeUtil;
 
 import static util.DateTimeUtil.isLateNow;
 import static util.DateTimeUtil.today;
 
 @RestController
-@RequestMapping(value = "/user/{userId}/meals", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/users/{userId}/meals", produces = MediaType.APPLICATION_JSON_VALUE)
 public class VoteController {
     protected final Logger log = LoggerFactory.getLogger(getClass());
 
@@ -33,7 +32,7 @@ public class VoteController {
         return ResponseEntity.ok(created);
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping("/cancel-vote")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public ResponseEntity delete(@PathVariable int userId) {
         log.info("cancel choice by user {}", userId);

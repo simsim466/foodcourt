@@ -27,11 +27,11 @@ public class VoteDataJpa implements VoteRepository {
 
     @Override
     public Vote save(Vote vote, int mealId, int userId) {
-        Meal meal = mealRepository.getById(mealId);
+        Meal meal = mealRepository.findById(mealId).orElse(null);
         if (!isToday(meal.getDate())) {
             return null;
         }
-        User user = userRepository.getById(userId);
+        User user = userRepository.findById(userId).orElse(null);
         vote.setMeal(meal);
         vote.setUser(user);
         return voteRepository.save(vote);

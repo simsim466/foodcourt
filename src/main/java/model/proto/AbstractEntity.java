@@ -35,7 +35,6 @@ public class AbstractEntity {
     }
 
     public int id() {
-        //проверить что он не ноль
         return id;
     }
 
